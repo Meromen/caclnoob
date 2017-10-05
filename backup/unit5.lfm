@@ -1,0 +1,21 @@
+object Form3: TForm3
+  Left = 405
+  Height = 434
+  Top = 128
+  Width = 556
+  Caption = 'Form3'
+  LCLVersion = '1.6.4.0'
+  object CalculatorDialog1: TCalculatorDialog
+    Value = 0
+    ColorBtnDigits = clBlack
+    ColorBtnMemory = clNavy
+    ColorBtnOk = clGreen
+    ColorBtnCancel = clMaroon
+    ColorBtnClear = clRed
+    ColorBtnOthers = clBlack
+    ColorDisplayText = clBlack
+    ColorDisplayBack = clWhite
+    left = 183
+    top = 96
+  end
+end

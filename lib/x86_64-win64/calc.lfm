@@ -1,0 +1,302 @@
+object Form1: TForm1
+  Cursor = crArrow
+  Left = 761
+  Height = 316
+  Top = 274
+  Width = 240
+  BorderIcons = [biSystemMenu, biMinimize]
+  BorderStyle = bsSingle
+  Caption = 'Калькулятор'
+  ClientHeight = 316
+  ClientWidth = 240
+  Color = clNone
+  FormStyle = fsMDIForm
+  OnKeyPress = FormKeyPress
+  LCLVersion = '1.6.4.0'
+  object Num7: TButton
+    Left = 16
+    Height = 40
+    Top = 147
+    Width = 40
+    Caption = '7'
+    OnClick = ButClick
+    TabOrder = 0
+  end
+  object Num4: TButton
+    Left = 16
+    Height = 40
+    Top = 187
+    Width = 40
+    Caption = '4'
+    OnClick = ButClick
+    TabOrder = 1
+  end
+  object Num1: TButton
+    Left = 16
+    Height = 40
+    Top = 227
+    Width = 40
+    Caption = '1'
+    OnClick = ButClick
+    TabOrder = 2
+  end
+  object Num8: TButton
+    Left = 56
+    Height = 40
+    Top = 147
+    Width = 40
+    Caption = '8'
+    OnClick = ButClick
+    TabOrder = 3
+  end
+  object Num9: TButton
+    Left = 96
+    Height = 40
+    Top = 147
+    Width = 40
+    Caption = '9'
+    OnClick = ButClick
+    TabOrder = 4
+  end
+  object Num5: TButton
+    Left = 56
+    Height = 40
+    Top = 187
+    Width = 40
+    Caption = '5'
+    OnClick = ButClick
+    TabOrder = 5
+  end
+  object Num6: TButton
+    Left = 96
+    Height = 40
+    Top = 187
+    Width = 40
+    Caption = '6'
+    OnClick = ButClick
+    TabOrder = 6
+  end
+  object Num2: TButton
+    Left = 56
+    Height = 40
+    Top = 227
+    Width = 40
+    Caption = '2'
+    OnClick = ButClick
+    TabOrder = 7
+  end
+  object Num3: TButton
+    Left = 96
+    Height = 40
+    Top = 227
+    Width = 40
+    Caption = '3'
+    OnClick = ButClick
+    TabOrder = 8
+  end
+  object Num0: TButton
+    Left = 16
+    Height = 40
+    Top = 267
+    Width = 80
+    Caption = '0'
+    OnClick = ButClick
+    TabOrder = 9
+  end
+  object Tochka: TButton
+    Left = 96
+    Height = 40
+    Top = 267
+    Width = 40
+    Caption = '.'
+    OnClick = TochkaClick
+    TabOrder = 10
+  end
+  object Plus: TButton
+    Left = 144
+    Height = 40
+    Top = 267
+    Width = 40
+    Caption = '+'
+    OnClick = ActClick
+    TabOrder = 11
+  end
+  object Minus: TButton
+    Left = 144
+    Height = 40
+    Top = 227
+    Width = 40
+    Caption = '-'
+    OnClick = ActClick
+    TabOrder = 12
+  end
+  object Multi: TButton
+    Left = 144
+    Height = 40
+    Top = 187
+    Width = 40
+    Caption = '*'
+    OnClick = ActClick
+    TabOrder = 13
+  end
+  object Divi: TButton
+    Left = 144
+    Height = 40
+    Top = 147
+    Width = 40
+    Caption = '/'
+    OnClick = ActClick
+    TabOrder = 14
+  end
+  object Invert: TButton
+    Left = 144
+    Height = 40
+    Top = 107
+    Width = 40
+    Caption = '+-'
+    OnClick = InvertClick
+    TabOrder = 15
+  end
+  object FullDel: TButton
+    Left = 96
+    Height = 40
+    Top = 107
+    Width = 40
+    Caption = 'C'
+    OnClick = FullDelClick
+    TabOrder = 16
+  end
+  object DelAll: TButton
+    Left = 56
+    Height = 40
+    Top = 107
+    Width = 40
+    Caption = 'CE'
+    OnClick = DelAllClick
+    TabOrder = 17
+  end
+  object DelOne: TButton
+    Left = 16
+    Height = 40
+    Top = 107
+    Width = 40
+    Caption = '<-'
+    OnClick = DelOneClick
+    TabOrder = 18
+  end
+  object SqrtBut: TButton
+    Left = 184
+    Height = 40
+    Top = 107
+    Width = 40
+    Caption = 'Sqrt'
+    OnClick = SqrtButClick
+    TabOrder = 19
+  end
+  object QrtBut: TButton
+    Left = 184
+    Height = 40
+    Top = 147
+    Width = 40
+    Caption = 'X^2'
+    OnClick = QrtButClick
+    TabOrder = 20
+  end
+  object DivOnX: TButton
+    Left = 184
+    Height = 40
+    Top = 187
+    Width = 40
+    Caption = '1/x'
+    OnClick = DivOnXClick
+    TabOrder = 21
+  end
+  object Enter: TButton
+    Left = 184
+    Height = 80
+    Top = 227
+    Width = 40
+    Caption = '='
+    OnClick = EnterClick
+    TabOrder = 22
+  end
+  object MemClear: TButton
+    Left = 16
+    Height = 40
+    Top = 61
+    Width = 40
+    Caption = 'MC'
+    OnClick = MemClearClick
+    TabOrder = 23
+  end
+  object MemRead: TButton
+    Left = 56
+    Height = 40
+    Top = 61
+    Width = 40
+    Caption = 'MR'
+    OnClick = MemReadClick
+    TabOrder = 24
+  end
+  object MemSave: TButton
+    Left = 96
+    Height = 40
+    Top = 61
+    Width = 40
+    Caption = 'MS'
+    OnClick = MemSaveClick
+    TabOrder = 25
+  end
+  object MemPlus: TButton
+    Left = 144
+    Height = 40
+    Top = 61
+    Width = 40
+    Caption = 'M+'
+    OnClick = MemPlusClick
+    TabOrder = 26
+  end
+  object MemMinus: TButton
+    Left = 184
+    Height = 40
+    Top = 61
+    Width = 40
+    Caption = 'M-'
+    OnClick = MemMinusClick
+    TabOrder = 27
+  end
+  object Memory: TLabel
+    Left = 1
+    Height = 1
+    Top = 32
+    Width = 1
+    ParentColor = False
+    WordWrap = True
+  end
+  object Calctext: TLabel
+    Left = 16
+    Height = 24
+    Top = 29
+    Width = 208
+    Alignment = taRightJustify
+    AutoSize = False
+    Font.CharSet = SHIFTJIS_CHARSET
+    Font.Height = -19
+    Font.Name = '@Adobe Gothic Std B'
+    Font.Pitch = fpVariable
+    Font.Quality = fqDraft
+    Font.Style = [fsBold]
+    ParentBidiMode = False
+    ParentColor = False
+    ParentFont = False
+  end
+  object Label1: TLabel
+    Left = 16
+    Height = 15
+    Top = 9
+    Width = 208
+    Alignment = taRightJustify
+    AutoSize = False
+    ParentColor = False
+  end
+end
